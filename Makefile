@@ -37,10 +37,10 @@ bin/testDrawing: testDrawing.cpp Drawing.o Square.o Rectangle.o Circle.o Shape.o
 	mkdir -p bin
 	g++ -o bin/testDrawing testDrawing.cpp Drawing.o Square.o Rectangle.o Circle.o Shape.o Point2D.o
 
-
 Shape.o: Shape.cpp Shape.h
 	g++ -c Shape.cpp
 
+all: bin/testListArray bin/testNode bin/testListLinked Point2D.o bin/testPoint2D bin/testCircle bin/testRectangle bin/testSquare bin/testDrawing Shape.o
 
 
 
